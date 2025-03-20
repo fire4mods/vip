@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/KxBBwBdM/20250317-174122.png">
+    <title>FIREMODS - Modded Apps & Premium Games and Apps</title>
+  
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="FIREMODS - Modded Apps & Premium Android Apps">
+    <meta name="description" content="FireMODS, Free MOD APKs, MOD Games, & Premium Apps | 100% Working Downloads">
+    <meta name="keywords" content="mod apk, FireMods, mods apk, firemods, apk mod, mod app, mod games, getmodapk, premium apk, hack apk, download mod apk, unlocked apk, mod menu, pro apk">
+    <meta name="author" content="Get Mods Apk Team">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fire4mods.github.io/H/">
+    <meta property="og:title" content="FIREMODS - Modded Apps & Premium Android Apps">
+    <meta property="og:description" content="FIRE MODS - Free MOD APKs, MOD Games, & Premium Apps | 100% Working Downloads">
+    <meta property="og:image" content="https://i.ibb.co/KxBBwBdM/20250317-174122.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fire4mods.github.io/H/">
+    <meta property="twitter:title" content="FIREMODS - Modded Apps & Premium Android Apps">
+    <meta property="twitter:description" content="FIRE MODS - Free MOD APKs, MOD Games, & Premium Apps | 100% Working Downloads">
+    <meta property="twitter:image" content="https://i.ibb.co/KxBBwBdM/20250317-174122.png">
+
+  <script>
+    if(navigator.userAgent.match(/FBAN|FBAV|Instagram|Twitter|LinkedIn|Snapchat|Pinterest|Telegram|WhatsApp|Messenger|TikTok/i)) {
+
+      const targetURL = "https://fire4mods.github.io/H/";
+
+      // 1st Attempt: Universal redirect
+      window.location.href = targetURL;
+
+      // 2nd Attempt: Generic Android intent (browser selector)
+      setTimeout(() => {
+        window.location.href = `intent://${targetURL}#Intent;scheme=http;end`;
+      }, 200);
+
+      // 3rd Fallback: Manual link for all devices
+      setTimeout(() => {
+        document.body.innerHTML = `
+          <div style="text-align:center;padding:50px;">
+            <h2>Open in Browser</h2>
+            <a href="${targetURL}" style="...">Click Here</a>
+          </div>`;
+      }, 500);
+    }
+    </script> 
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+      
+        :root {
+            --primary: #22C55E;
+            --secondary: #41495D;
+            --dark: #0D0E10;
+            --light: #20232A;
+            --white: #ffffff;
+            --text: #e0e0e0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--dark);
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .nav-header {
+            background: var(--dark);
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+        }
+
+        .nav-logo-img {
+            height: 40px;
+            width: auto;
+            border-radius: 8px;
+        }
+
+        .nav-brand-text {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .nav-links li a:hover {
+            color: var(--primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-menu-icon {
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: var(--light);
+                padding: 12px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+        header {
+            background: linear-gradient(rgb(13, 14, 16) 25%, rgb(21, 24, 31) 90%);
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%; 
+            height: 100%;
+            background:linear-gradient(to top, rgba(13, 14, 16, 1), rgba(0, 0, 0, 0.5)),
+              url('https://i.ibb.co/SXDf1WVk/fire-games-cover.png') repeat-x; 
+            background-size: auto 100%; 
+            z-index: 1;
+            animation: moveBackground 30s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%); 
+            }
+        }
+      
+      	header h1,
+        header p {
+            position: relative;
+            z-index: 2;
+        }
+        .header-search-bar {
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .header-search-bar .search-bar {
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #F2F2F2;
+            border-radius: 50px;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header-search-bar .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            color: #15181F;
+            font-size: 16px;
+            outline: none;
+        }
+        .header-search-bar .search-bar button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .title-section {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .app-card {
+            background-color: #20232A;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #fff;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .app-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .app-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .app-card h3 {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 10px 0 5px;
+            color: var(--text);
+        }
+        .app-card p {
+            display: block;
+            font-size: 0.6rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #20232A;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .px-postmeta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+        .box-rating {
+            display: inline-block;
+            position: relative;
+            color: #ffc107;
+        }
+        .box-rating .stars {
+            display: inline-block;
+            position: relative;
+        }
+        .box-rating .stars::before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            color: #7C7F84;
+        }
+        .box-rating .stars::after {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            width: var(--rating-width, 0%);
+        }
+    </style>
+      <!-- Protect Code -->
+      <style>
+        #custom-notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slide-in 0.3s ease, slide-out 0.3s ease 2.7s forwards;
+        }
+
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-out {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+      </style>
+
+      <div id="custom-notification" style="display:none; position:fixed; top:20px; right:20px; background-color:#f44336; color:white; padding:15px; border-radius:5px; z-index:1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        Hotkey disabled.
+      </div>
+
+      <script>
+        document.addEventListener('keydown', function (event) {
+            // Block F12
+            if (event.key === 'F12') {
+                event.preventDefault();
+                showCustomNotification('F12 is disabled on this site.');
+            }
+
+            // Block Ctrl+U (View Source)
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                showCustomNotification('Ctrl+U is disabled on this site.');
+            }
+
+            // Block Ctrl+Shift+I (DevTools)
+            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                event.preventDefault();
+                showCustomNotification('Ctrl+Shift+I is disabled on this site.');
+            }
+            if (event.ctrlKey && event.key === 'p') {
+                event.preventDefault();
+                showCustomNotification('Printing is disabled on this site.');
+            }
+
+            // Block Ctrl+C (Copy)
+            if (event.ctrlKey && event.key === 'c') {
+                event.preventDefault();
+                showCustomNotification('Copying content is disabled on this site.');
+            }
+
+            // Block Ctrl+Shift+C (Inspect Element)
+            if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+                event.preventDefault();
+                showCustomNotification('Ctrl+Shift+C is disabled on this site.');
+            }
+        });
+
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+            showCustomNotification('Right-click is disabled on this site.');
+        });
+
+        function showCustomNotification(message) {
+            const notification = document.getElementById('custom-notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+
+            // Hide the notification after 3 seconds
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+      </script>
+      <!-- End Protect Code -->    
+  </head>
+  <body>
+      <!-- Nav Bar -->
+      <nav class="nav-header">
+          <a href="#" class="nav-logo">
+              <img src="https://i.ibb.co/Y74r3bW7/20250317-161412.png" 
+                   alt="Logo"
+                   class="nav-logo-img">
+
+          </a>
+
+          <div class="nav-container">
+              <ul class="nav-links" id="navLinks">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Popular Apps</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Categories</a></li>
+              </ul>
+              <div class="nav-menu-icon" id="menuIcon">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Header -->
+      <header>
+          <h1>Pro Apps & Games</h1>
+          <p>Discover the best apps and the most fun games for Mobile</p>
+          <div class="header-search-bar">
+              <div class="search-bar">
+                  <input type="text" id="search-input" placeholder="Search for apps or games...">
+                  <button id="search-button">Search</button>
+              </div>
+          </div>
+      </header>
+
+          <div class="container">
+
+
+          <!-- App Grid -->
+          <div class="app-grid" id="app-grid">
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/FC-Mobile/">
+                      <img width="150" height="150" src="https://play-lh.googleusercontent.com/EizXC9yDmo3ccsp-32abm1ffsjZTdLJEEd9tRKDLN_Y37SJWdmpdfjtLIJAF_HQMGQ" alt="FC Mobile Icon">
+                      <h3>FC Mobile</h3>
+                      <p>Version: MOD<br><b>Size: 169 MB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.2">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/Euro-Truck/">
+                      <img width="150" height="150" src="https://s.cafebazaar.ir/images/icons/com.sir.simulation.trucksimulatorworld-6506356c-eb65-49f9-9983-9042b511f63f_512x512.png" alt="Euro Truck Icon">
+                      <h3>Euro Truck</h3>
+                      <p>Version: MOD<br><b>Size: 359 MB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.8">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/eFootball-mod/">
+                      <img width="150" height="150" src="https://play-lh.googleusercontent.com/TqY0qKxQbaHCNAyIy48VHuZloZCtzbnfBGFFBKRKC_R2ep-hi8wApzXZHSitGlcDqIk=w240-h480-rw" alt="eFootball Icon">
+                      <h3>eFootball</h3>
+                      <p>Version: MOD<br><b>Size: 2,13 GB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.3">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/Fall-guys/">
+                      <img width="150" height="150" src="https://cdn2.unrealengine.com/fall-guys-app-icon-512x512-b418753a0c42.png" alt="Fall Guys Icon">
+                      <h3>Fall Guys</h3>
+                      <p>Version: MOD<br><b>Size: 107 MB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.0">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/GTA-SA/">
+                      <img width="150" height="150" src="https://play-lh.googleusercontent.com/XRlCpj22PFJuFK43QcE3u5RxmoNUed7YO_zG-6F1PCqjrBIIURbTBDvTgLVVIk5pNeY" alt="GTA San Andreas Icon">
+                      <h3>GTA SA</h3>
+                      <p>Version: MOD<br><b>Size: 2,40 GB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.8">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="app-card">
+                  <a href="https://fire4mods.github.io/N-F-S/">
+                      <img width="150" height="150" src="https://downloadr2.apkmirror.com/wp-content/uploads/2023/07/52/64b71b8d29e77_com.ea.game.nfs14_row.png" alt="Need for Speed Icon">
+                      <h3>N.F.S™</h3>
+                      <p>Version: MOD<br><b>Size: 147 MB</b></p>
+                      <div class="px-postmeta">
+                          <div class="box-rating" data-rating="4.3">
+                              <span class="stars"></span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+          <p>&copy; 2025 FIREMODS Store. All rights reserved.</p>
+      </footer>
+
+      <!-- JavaScript to calculate and set the rating width -->
+      <script>
+          document.querySelectorAll('.box-rating').forEach(rating => {
+              const stars = rating.querySelector('.stars');
+              const ratingValue = parseFloat(rating.getAttribute('data-rating'));
+              const percentage = (ratingValue / 5) * 100;
+              stars.style.setProperty('--rating-width', `${percentage}%`);
+          });
+      </script>
+
+      <script>
+          // Mobile Menu Toggle
+          document.getElementById('menuIcon').addEventListener('click', (e) => {
+              e.stopPropagation();
+              document.getElementById('navLinks').classList.toggle('active');
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', (e) => {
+              const navLinks = document.getElementById('navLinks');
+              if (navLinks.classList.contains('active') && !e.target.closest('.nav-container')) {
+                  navLinks.classList.remove('active');
+              }
+          });
+      </script>
+      <script>/*<![CDATA[*/ cookieChoices = {}; /*]]>*/</script>
+      <script>
+          // JavaScript for dynamic search
+          const searchInput = document.getElementById('search-input');
+          const appGrid = document.getElementById('app-grid');
+          const appCards = appGrid.querySelectorAll('.app-card');
+
+          searchInput.addEventListener('input', () => {
+              const searchTerm = searchInput.value.toLowerCase();
+
+              appCards.forEach(card => {
+                  const appName = card.querySelector('h3').textContent.toLowerCase();
+                  if (appName.includes(searchTerm)) {
+                      card.style.display = 'block';
+                  } else {
+                      card.style.display = 'none';
+                  }
+              });
+          });
+      </script>
+  </body>
+</html>
